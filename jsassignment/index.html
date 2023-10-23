@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript | Validations</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+    <div class="header">
+        <img src="images/logo.png" alt="" width="50px" height="50px">
+        <div>
+            <h1 id="title">Library Portal</h1>
+        </div>
+        <div>
+            <p id="books">Books</p>
+        </div>
+    </div>
+
+<div class="container">
+<form id="form">
+    <h1 style="color: darkturquoise;">Add New Book</h1>
+    <div class="input-control">
+        <label for="category" class="label">Category</label>
+        <select name="category" id="category">
+            <option value="it">IT</option>
+            <option value="trading">Trading</option>
+            <option value="economics">Economics</option>
+            <option value="sports">Sports</option>
+        </select>
+        <div class="error"></div>
+    </div>
+
+    <div class="input-control">
+        <label for="book" class="label">Book</label>
+        <input type="text" id="book" name="book">
+        <div class="error"></div>
+    </div>
+
+    <div class="input-control">
+        <label for="email" class="label">Author Email</label>
+        <input type="email" id="email" name="email">
+        <div class="error"></div>
+    </div>
+
+    <div class="input-control">
+        <label for="name" class="label">Author Name</label>
+        <input type="text" id="name" name="name">
+        <div class="error"></div>
+    </div>
+
+    <div class="input-control">
+        <label for="published" class="label">Published</label>
+        <input type="date" id="published" name="published">
+        <div class="error"></div>
+    </div>
+
+    <div class="input-control">
+        <label for="price" class="label">Price</label>
+        <input type="text" id="price" name="price">
+        <div class="error"></div>
+    </div>
+
+        <button type="submit">Save</button>
+        <button>Cancel</button>
+        <button>Show</button>
+
+</form>
+</div>
+
+    <div id="show-books"></div>
+
+    <footer>
+        <p>Copyright@2019-present Syncfusion</p>
+    </footer>
+    
+    
+    
+
+    <script defer src="validations.js"></script>
+</body>
+</html>
